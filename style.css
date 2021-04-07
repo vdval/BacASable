@@ -28,24 +28,28 @@ p {
 
 img {
     border: 2px black solid;
+    animation-duration: 1s;
+    animation-name: CatSlide;
+
 }
    
-
 @keyframes CatSlide {
-    0% {
-        transform: translateX(20%);
+    from {
+      margin-left: 100%;
+      width: 300%;
     }
-    100% {
-        transform: 
-        translateX(100%)
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
     }
-}
+  }
 
 .boxWithAnimation {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    animation: 400ms ease-out 0s 1 CatSlide;
+    animation: 200ms ease 0s 1 CatSlide;
 }
 
 .blocRelativeWhite {
