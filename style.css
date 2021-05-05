@@ -55,11 +55,25 @@ img {
 .blocRelativeWhite {
     position: relative; 
     height: 800px; 
-    background: white; 
+    background: linear-gradient(-45deg, #f09073, #f07eaa, #d4ee76, #75f5d7);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
     color: black;
     border-top-left-radius: 50%;
     border: black 10px double;
     background-clip: content-box;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .blocRelativeGreen { 
