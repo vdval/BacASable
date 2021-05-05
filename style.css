@@ -28,7 +28,7 @@ p {
 
 img {
     border: 2px black solid;
-    animation-duration: 1s;
+    animation-duration: 6s;
     animation-name: CatSlide;
 
 }
@@ -49,7 +49,7 @@ img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    animation: 200ms ease 0s 1 CatSlide;
+    animation: 600ms ease 0s 1 CatSlide;
 }
 
 .blocRelativeWhite {
